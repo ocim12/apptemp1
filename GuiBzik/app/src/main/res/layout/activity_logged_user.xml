@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoggedUser">
+
+    <RelativeLayout
+        android:id="@+id/mainRelative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_main_menu"
+        android:orientation="vertical"
+        android:padding="7dp">
+
+
+        <ImageView
+            android:id="@+id/dropOfWater"
+            android:layout_width="54dp"
+            android:layout_height="99dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/kropla_osoba"
+            android:onClick="userInformation" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="70dp" />
+
+        <ImageView
+            android:id="@+id/bubblesButton"
+            android:layout_width="41dp"
+            android:layout_height="52dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ikonka_krople"
+            tools:ignore="ImageContrastCheck" />
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/be_hydrate_popup">
+
+            <Button
+                android:id="@+id/beHydrateButton"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/button_helper"
+                android:fontFamily="@font/bold"
+                android:onClick="beHydrateAction"
+                android:text="BeHydrate!"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/currentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="150dp"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <Spinner
+                android:id="@+id/leftSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="110dp"
+                android:entries="@array/mls_arrays"
+                android:prompt="@string/mls_prompt" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="110dp"
+                android:layout_marginEnd="0dp"
+                android:entries="@array/mood_arrays"
+                android:prompt="@string/mood_prompt" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/popUpInfo"
+            android:layout_width="320dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="115dp"
+            android:background="@drawable/button_helper">
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="27dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/light_grey_button"
+                android:fontFamily="@font/bold"
+                android:onClick="closePopUp"
+                android:text="Ok"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPowitanie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/lightBlue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dailyHydrate"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/textviews"
+                android:fontFamily="@font/bold"
+                android:gravity="center"
+                android:text="Dzisiaj wypiles 0ml wody"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="75dp"
+                android:background="@drawable/textviews"
+                android:fontFamily="@font/bold"
+                android:gravity="center"
+                android:text="Do dziennego celu brakuje: 3000ml wody"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

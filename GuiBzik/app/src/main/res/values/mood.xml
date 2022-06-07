@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <string name="app_name2">GuiBzik</string>
+        <string name="mood_prompt">Choose your mood</string>
+
+        <string-array name="mood_arrays">
+            <item>Amazing</item>
+            <item>Good</item>
+            <item>Well, ok</item>
+            <item>Bad</item>
+            <item>Very bad</item>
+        </string-array>
+
+    </resources>

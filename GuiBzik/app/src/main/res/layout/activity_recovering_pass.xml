@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecoveringPass">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_problem"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageViewSun1"
+            android:layout_width="139dp"
+            android:layout_height="118dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/sun_graphic" />
+
+        <EditText
+            android:layout_width="280dp"
+            android:id="@+id/emailTextF"
+            android:layout_height="50dp"
+            android:background="@drawable/input_field_blue"
+            android:hint="Wprowadź swojego e-maila"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp" />
+
+        <Button
+            android:layout_width="200dp"
+            android:id="@+id/forgottenPasswordButton"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:onClick="recoverPassword"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_helper"
+            android:fontFamily="@font/bold"
+            android:text="Resetuj hasło"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

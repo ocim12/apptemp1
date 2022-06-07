@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.AccrPatternsAdminFragment">
+
+    <Button
+        android:id="@+id/add_accr_pattern"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:background="@drawable/pressed_buttonv1"
+        android:backgroundTint="@null"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="Dodaj wzór akredytacji"
+        android:textAllCaps="false"
+        android:textColor="@color/greyv1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@color/grey">
+
+        <ListView
+            android:id="@+id/patterns_admin_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:alwaysDrawnWithCache="true"
+            android:divider="@color/greyv2"
+            android:dividerHeight="1dp"
+            android:scrollingCache="true" />
+    </LinearLayout>
+
+</LinearLayout>

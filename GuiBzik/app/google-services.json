@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "234847137428",
+    "firebase_url": "https://guibzik.firebaseio.com",
+    "project_id": "guibzik",
+    "storage_bucket": "guibzik.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234847137428:android:25831240144a6ceb6d0e81",
+        "android_client_info": {
+          "package_name": "com.example.guibzik"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234847137428-64tmbipb8v53f3ilrqe0jnqac9duro54.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.guibzik",
+            "certificate_hash": "e57adfcd471b54505c960850e63c20e4be5d5406"
+          }
+        },
+        {
+          "client_id": "234847137428-l4lpb79gpcsj48iknic3vph7ideu2vqn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA75nex0AmUiMkRhs76NBJjhf7ftsAj74U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234847137428-l4lpb79gpcsj48iknic3vph7ideu2vqn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
